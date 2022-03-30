@@ -20,9 +20,9 @@ body, html {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
+  padding: 11px 13px;
+  font-size: 15px;
+  width: 20%;
 }
 
 .tablink:hover {
@@ -33,40 +33,48 @@ body, html {
 .tabcontent {
   color: white;
   display: none;
-  padding: 100px 20px;
-  height: 100%;
+  padding: 60px 20px;
+  height: 80%;
 }
 
 #Home {background-color: red;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
+#brödet {background-color: green;}
+#kött {background-color: blue;}
+#pommes {background-color: papayawhip;}
+#About {background-color:skyblue;}
 </style>
 </head>
 <body>
 
 <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
-<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+<button class="tablink" onclick="openPage('brödet', this, 'green')" id="defaultOpen">Burger Buns</button>
+<button class="tablink" onclick="openPage('kött', this, 'blue')">Quality meat</button>
+<button class="tablink" onclick="openPage('pommes', this, 'orange')">Perfect fries </button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">Om oss</button>
 
 <div id="Home" class="tabcontent">
   <h3>Home</h3>
   <p>Home is where the heart is..</p>
 </div>
 
-<div id="News" class="tabcontent">
-  <h3>News</h3>
-  <p>Some news this fine day!</p> 
+<div id="brödet" class="tabcontent">
+  <h3>Burger Buns</h3>
+  <p>It all start with the perfect fresh and fluffy buns (ayo) </p> 
 </div>
 
-<div id="Contact" class="tabcontent">
-  <h3>Contact</h3>
-  <p>Get in touch, or swing by for a cup of coffee.</p>
+<div id="kött" class="tabcontent">
+  <h3>Quality meat</h3>
+  <p>A burger without meat is like dinner without food</p>
 </div>
+
+<div id="pommes" class="tabcontent">
+    <h3>Perfect fries</h3>
+    <p>Soon you will know how to make the best fries</p>
+  </div>
+
 
 <div id="About" class="tabcontent">
-  <h3>About</h3>
+  <h3>Om oss</h3>
   <p>Who we are and what we do.</p>
 </div>
 
