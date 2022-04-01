@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Burgers </title>
+
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('brödet', this, 'green')" id="defaultOpen">Burger Buns</button>
+<button class="tablink" onclick="openPage('kött', this, 'blue')">Quality meat</button>
+<button class="tablink" onclick="openPage('pommes', this, 'orange')">Perfect fries </button>
+<button class="tablink" onclick="openPage('About', this, 'PaleGoldenRod')">Om oss</button>
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
+</div>
+
+<div id="brödet" class="tabcontent">
+  <h3>Burger Buns</h3>
+  <p>It all start with the perfect fresh and fluffy buns (ayo) </p> 
+</div>
+
+<div id="kött" class="tabcontent">
+  <h3>Quality meat</h3>
+  <p>A burger without meat is like dinner without food</p>
+</div>
+
+<div id="pommes" class="tabcontent">
+    <h3>Perfect fries</h3>
+    <p>Soon you will know how to make the best fries</p>
+  </div>
+
+
+<div id="About" class="tabcontent">
+  <h3>Om oss</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
