@@ -4,22 +4,23 @@
   <title> Burgers </title>
 <link href="testprojekt.css" rel="stylesheet" type="text/css">
 <script src="testprojekt.js" > </script>
+ <meta charset="UTF-8">
 </head>
 <body>
 
-<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-<button class="tablink" onclick="openPage('brödet', this, 'green')" id="defaultOpen">Burger Buns</button>
-<button class="tablink" onclick="openPage('kött', this, 'blue')">Quality meat</button>
-<button class="tablink" onclick="openPage('pommes', this, 'orange')">Perfect fries </button>
-<button class="tablink" onclick="openPage('About', this, 'PaleGoldenRod')">Om oss</button>
+<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button> 
+<button class="tablink" onclick="openPage('brödet', this, 'green')" id="defaultOpen">Burger Buns</button> <a href="buns.html">Home</a>
+<button class="tablink" onclick="openPage('kött', this, 'blue')">Quality meat</button> <a href="meat.html">brödet</a>
+<button class="tablink" onclick="openPage('pommes', this, 'orange')">Perfect fries </button> <a href="pommes.html">Quality meat</a>
+<button class="tablink" onclick="openPage('About', this, 'PaleGoldenRod')">Om oss</button> <a href="omoss.html">Om oss</a>
 
 <div id="Home" class="tabcontent">
   <h3 style="text-align:center;">Home</h3>
-  
+  <p style="text-align:center;">Välkommen</p>
   <p style="text-align:center;">Du har kommit hit för att ta reda på hur man gör den perfekta burgaren. Då har du kommit rätt. Jag kommer hjälpa dig steg för steg på hur du kan skapa den perfekta burgaren.</p>
-  <img src="../testprojekt/image/burger-g81cc91732_1920.jpg" class="bild">
+  <img src="../testprojekt/image/burger-g81cc91732_1920.jpg" alt="burger picture">
+  
 </div>
-<p style="display: block;"> vad händer om jag skriver här</p>
 
 <div id="brödet" class="tabcontent">
   <h3>Burger Buns</h3>
